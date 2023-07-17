@@ -13,7 +13,7 @@
   </nav>
 
   <div class="container mt-4">
-    <h1>Organization List</h1>
+    <h1>Lista de Organizaciones</h1>
     <hr>
     {% if organizations %}
       <ul class="list-group">
@@ -28,8 +28,8 @@
     {% else %}
       <p>No organizations found.</p>
     {% endif %}
+    <a class="btn btn-primary mt-3" href="{% url 'organization_create' %}">Crear Organización</a>
   </div>
-
 
 </body>
 </html>
