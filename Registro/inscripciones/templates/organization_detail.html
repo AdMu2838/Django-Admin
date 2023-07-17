@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalle de la organizacion</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Organization Detail</a>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Organization Detail</h1>
+        <hr>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ organization.organization_name }}</h5>
+                <p class="card-text">
+                    <strong>ID:</strong> {{ organization.organization_id }}<br>
+                    <strong>Status:</strong> {% if organization.organization_status %}Active{% else %}Inactive{% endif %}<br>
+                    <strong>Created:</strong> {{ organization.organization_created }}<br>
+                    <strong>Modified:</strong> {{ organization.organization_modified }}<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
